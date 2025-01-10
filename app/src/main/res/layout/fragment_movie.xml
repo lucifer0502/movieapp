@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieFragment">
+
+    <!-- TextView para mostrar categoría -->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/categoriatv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- RecyclerView para mostrar las películas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMovies"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        tools:listitem="@layout/item_rvmovie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoriatv"
+        app:layout_constraintBottom_toTopOf="@+id/llOptions"/>
+
+    <!-- LinearLayout para los botones de opciones -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/llOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingVertical="12dp">
+
+        <!-- Botón de Estrenos -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/secondaryColor"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="10sp"
+            android:text="Estrenos"/>
+
+        <!-- Botón de Populares -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetPopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/secondaryColor"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="10sp"
+            android:text="Populares"/>
+
+        <!-- Botón de Top -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetTopRated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/secondaryColor"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="10sp"
+            android:text="Top"/>
+
+        <!-- Botón de Próximos -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetUpcoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondaryColor"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="10sp"
+            android:text="Próximos"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

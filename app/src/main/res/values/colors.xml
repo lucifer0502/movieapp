@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<color name="primaryColor">#37464f</color>
+
+<color name="primaryLightColor">#62717b</color>
+
+<color name="primaryDarkColor">#101f27</color>
+
+<color name="secondaryColor">#E95354</color>
+
+<color name="amarillo">#ffd95a</color>
+
+<color name="secondaryDarkColor">#c17900</color>
+
+<color name="white">#ffffff</color>
+
+
+<color name="secondaryTextColor">#000000</color>
+    <color name="blue">#2196F3</color>
+
+</resources>

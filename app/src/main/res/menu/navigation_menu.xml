@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/movieFragment"
+        android:icon="@drawable/ic_iconomenu"
+        android:title="Peliculas"
+
+        />
+
+    <item
+        android:id="@+id/fotosFragment"
+        android:icon="@drawable/ic_iconomenu"
+        android:title="Foto"
+
+        />
+
+    <item
+        android:id="@+id/registroFragment"
+        android:icon="@drawable/ic_iconomenu"
+        android:title="Registro"
+
+        />
+    <item
+        android:id="@+id/cuentaFragment"
+        android:icon="@drawable/ic_iconomenu"
+        android:title="Cuenta"
+
+        />
+
+
+
+</menu>
